@@ -66,9 +66,8 @@ holiday_hash.each do |season, holiday|
     print "  #{holiday_name.capitalize}:"
     supplies.each_with_index do |supply, index| 
       if ((index + 1) == supplies.length)
-      puts " #{supply}"
+      print " #{supply}"
     else 
-      
       print " #{supply}," 
     end
     end
