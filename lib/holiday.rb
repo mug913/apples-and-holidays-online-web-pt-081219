@@ -67,12 +67,13 @@ holiday_hash.each do |season, holiday|
     sentence = "  #{holiday_name.capitalize}:"
     supplies.each_with_index do |supply, index| 
       if ((index + 1) == supplies.length)
-      print " #{supply}\n"
-    else 
-      print " #{supply}," 
-    end
+        sentence << " #{supply}\n"
+      else 
+        sentence << " #{supply}," 
+      end
     end
   end 
+puts sentence
 end 
 end
 
