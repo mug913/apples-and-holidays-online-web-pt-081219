@@ -64,8 +64,11 @@ holiday_hash.each do |season, holiday|
   puts "#{season.capitalize}:"
   holiday.each do |holiday_name, supplies| 
     print "  #{holiday_name.capitalize}:"
-    supplies.each do |supply| 
-      print " #{supply}"
+    supplies.each_with_index do |supply, index| 
+      if ((index + 1) == supply.length)
+      puts " #{supply}"
+    else 
+      print 
     end
   end 
 end 
