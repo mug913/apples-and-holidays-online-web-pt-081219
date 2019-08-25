@@ -67,7 +67,7 @@ holiday_hash.each do |season, holiday|
     supplies.each_with_index do |supply, index| 
       if ((index + 1) == supply.length)
       puts " #{supply}"
-    else 
+    else " #{supply},"
       print 
     end
   end 
