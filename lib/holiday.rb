@@ -68,6 +68,7 @@ holiday_hash.each do |season, holiday|
       if ((index + 1) == supply.length)
       puts " #{supply}"
     else 
+      binding.pry
       print " #{supply}," 
     end
     end
