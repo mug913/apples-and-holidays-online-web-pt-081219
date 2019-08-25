@@ -72,9 +72,9 @@ holiday_hash.each do |season, holiday|
         sentence << " #{supply}," 
       end
     end
+    puts sentence
   end 
 end 
-puts sentence
 end
 
 def all_holidays_with_bbq(holiday_hash)
