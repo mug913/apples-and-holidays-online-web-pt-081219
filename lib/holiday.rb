@@ -64,7 +64,7 @@ holiday_hash.each do |season, holiday|
   sentence = ""
   puts "#{season.capitalize}:"
   holiday.each do |holiday_name, supplies| 
-    sentence = "  #{holiday_name.capitalize}:"
+    sentence = "  #{holiday_name.capitalize.sub("_"," ")}:"
     supplies.each_with_index do |supply, index| 
       if ((index + 1) == supplies.length)
         sentence << " #{supply}"
@@ -72,7 +72,7 @@ holiday_hash.each do |season, holiday|
         sentence << " #{supply}," 
       end
     end
-    puts sentence.capitalize!.sub("_"," ")
+    puts sentence
   end 
 end 
 end
