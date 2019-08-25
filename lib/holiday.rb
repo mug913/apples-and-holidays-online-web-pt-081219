@@ -72,7 +72,7 @@ holiday_hash.each do |season, holiday|
         sentence << " #{supply}," 
       end
     end
-    puts sentence
+    puts sentence.sub("_"," ")
   end 
 end 
 end
